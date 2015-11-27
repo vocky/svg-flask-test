@@ -1,0 +1,46 @@
+/*** SVG demonstration ***/
+
+/*green: #17BF00*/
+/*slow: #FF9E19*/
+/*red: #F33131*/
+/*jam: #C21F1F*/
+
+#roadmap-1 {
+    fill: #17BF00;
+}
+
+#roadmap-2 {
+    fill: #F33131;
+}
+
+#roadmap-3 {
+    fill: #C21F1F;
+}
+
+#roadmap-4 {
+    fill: #17BF00;
+}
+
+#roadmap-5 {
+    fill: #C21F1F;
+}
+
+#roadmap-6 {
+    fill: #17BF00;
+}
+
+#roadmap-7 {
+    fill: #FF9E19;
+}
+
+#roadmap-8 {
+    fill: #F33131;
+}
+
+#roadmap-9 {
+    fill: #FF9E19;
+}
+
+#roadmap-10 {
+    fill: #17BF00;
+}

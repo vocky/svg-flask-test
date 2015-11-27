@@ -1,0 +1,347 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="500px" height="500px">
+  <rect x="0" y="0" width="500" height="500" fill="#EEEEEE"/>
+  <rect x="10" y="10" width="50" height="50" rx="10" ry="200" fill="#FF0000" stroke="black" stroke-width="4" opacity="0.5"/>
+  <path d="M 10 70 60 70 60 120 10 120 Z" fill="#FF0000" stroke="black" stroke-width="4" opacity="0.5"/>
+  <circle cx="95" cy="35" r="25" fill="#FF0000" stroke="black" stroke-width="4" opacity="0.5"/>
+  <ellipse cx="95" cy="95" rx="25" ry="15" fill="#FF0000" stroke="black" stroke-width="4" opacity="0.5"/>
+  <polygon points="130 70 180 70 155 120" fill="#FF0000" stroke="black" stroke-width="4" opacity="0.5"/>
+  <polyline points="130 10 180 10 155 60" fill="#FF0000" stroke="black" stroke-width="4" opacity="0.5"/>
+  <path d="M 190 10 C 215 10 240 10 240 35 Q 215 35 215 60" fill="#FF0000" stroke="black" stroke-width="4" opacity="0.5"/>
+  <rect transform="matrix(0 1 -1 0 400 0)" x="10" y="10" width="50" height="50" rx="10" ry="200" style="fill:green; stroke : black ; stroke-width:4 ; opacity:0.5"/>
+  <path transform="matrix(0 1 -1 0 400 0)" d="M 10 70 60 70 60 120 10 120 Z" style="fill:green; stroke : black ; stroke-width:4 ; opacity:0.5"/>
+  <circle transform="matrix(0 1 -1 0 400 0)" cx="95" cy="35" r="25" style="fill:green; stroke : black ; stroke-width:4 ; opacity:0.5"/>
+  <ellipse transform="matrix(0 1 -1 0 400 0)" cx="95" cy="95" rx="25" ry="15" style="fill:green; stroke : black ; stroke-width:4 ; opacity:0.5"/>
+  <polygon transform="matrix(0 1 -1 0 400 0)" points="130 70 180 70 155 120" style="fill:green; stroke : black ; stroke-width:4 ; opacity:0.5"/>
+  <polyline transform="matrix(0 1 -1 0 400 0)" points="130 10 180 10 155 60" style="fill:green; stroke : black ; stroke-width:4 ; opacity:0.5"/>
+  <path transform="matrix(0 1 -1 0 400 0)" d="M 190 10 C 215 10 240 10 240 35 Q 215 35 215 60" style="fill:green; stroke : black ; stroke-width:4 ; opacity:0.5"/>
+  <g transform="matrix(0 -1 1 0 0 400)" opacity="0.5">
+    <rect x="10" y="10" width="50" height="50" rx="10" ry="200" fill="#00F" stroke="black" stroke-width="4"/>
+    <path d="M 10 70 60 70 60 120 10 120 Z" fill="#00F" stroke="black" stroke-width="4"/>
+    <circle cx="95" cy="35" r="25" fill="#00F" stroke="black" stroke-width="4"/>
+    <ellipse cx="95" cy="95" rx="25" ry="15" fill="#00F" stroke="black" stroke-width="4"/>
+    <polygon points="130 70 180 70 155 120" fill="#00F" stroke="black" stroke-width="4"/>
+    <polyline points="130 10 180 10 155 60" fill="#00F" stroke="black" stroke-width="4"/>
+    <path d="M 190 10 C 215 10 240 10 240 35 Q 215 35 215 60" fill="#00F" stroke="black" stroke-width="4"/>
+  </g>
+</svg>
+
+<canvas></canvas>
+<script>
+var canvases = document.getElementsByTagName("canvas");
+var canvas = canvases[canvases.length - 1];
+var context = canvas.getContext("2d");
+var width = 500.0;
+var height = 500.0;
+var dpr = window.devicePixelRatio || 1;
+canvas.width = dpr * width;
+canvas.height = dpr * height;
+canvas.style.width = width + "px";
+canvas.style.height = height + "px";
+context.scale(dpr, dpr);
+context.beginPath();
+context.moveTo(0.0, 0.0);
+context.lineTo(500.0, 0.0);
+context.lineTo(500.0, 500.0);
+context.lineTo(0.0, 500.0);
+context.closePath();
+context.fillStyle = "rgba(238, 238, 238, 1.0)";
+context.fill();
+context.beginPath();
+context.moveTo(20.0, 10.0);
+context.lineTo(50.0, 10.0);
+context.bezierCurveTo(55.5228474983, 10.0, 60.0, 21.1928812542, 60.0, 35.0);
+context.lineTo(60.0, 35.0);
+context.bezierCurveTo(60.0, 48.8071187458, 55.5228474983, 60.0, 50.0, 60.0);
+context.lineTo(20.0, 60.0);
+context.bezierCurveTo(14.4771525017, 60.0, 10.0, 48.8071187458, 10.0, 35.0);
+context.lineTo(10.0, 35.0);
+context.bezierCurveTo(10.0, 21.1928812542, 14.4771525017, 10.0, 20.0, 10.0);
+context.closePath();
+context.fillStyle = "rgba(255, 0, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(10.0, 70.0);
+context.lineTo(60.0, 70.0);
+context.lineTo(60.0, 120.0);
+context.lineTo(10.0, 120.0);
+context.closePath();
+context.fillStyle = "rgba(255, 0, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(70.0, 35.0);
+context.bezierCurveTo(70.0, 21.1928812542, 81.1928812542, 10.0, 95.0, 10.0);
+context.bezierCurveTo(108.807118746, 10.0, 120.0, 21.1928812542, 120.0, 35.0);
+context.bezierCurveTo(120.0, 48.8071187458, 108.807118746, 60.0, 95.0, 60.0);
+context.bezierCurveTo(81.1928812542, 60.0, 70.0, 48.8071187458, 70.0, 35.0);
+context.closePath();
+context.fillStyle = "rgba(255, 0, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(70.0, 95.0);
+context.bezierCurveTo(70.0, 86.7157287525, 81.1928812542, 80.0, 95.0, 80.0);
+context.bezierCurveTo(108.807118746, 80.0, 120.0, 86.7157287525, 120.0, 95.0);
+context.bezierCurveTo(120.0, 103.284271247, 108.807118746, 110.0, 95.0, 110.0);
+context.bezierCurveTo(81.1928812542, 110.0, 70.0, 103.284271247, 70.0, 95.0);
+context.closePath();
+context.fillStyle = "rgba(255, 0, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(130.0, 70.0);
+context.lineTo(180.0, 70.0);
+context.lineTo(155.0, 120.0);
+context.closePath();
+context.fillStyle = "rgba(255, 0, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(130.0, 10.0);
+context.lineTo(180.0, 10.0);
+context.lineTo(155.0, 60.0);
+context.fillStyle = "rgba(255, 0, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(190.0, 10.0);
+context.bezierCurveTo(215.0, 10.0, 240.0, 10.0, 240.0, 35.0);
+context.bezierCurveTo(223.333333333, 35.0, 215.0, 43.3333333333, 215.0, 60.0);
+context.fillStyle = "rgba(255, 0, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(390.0, 20.0);
+context.lineTo(390.0, 50.0);
+context.bezierCurveTo(390.0, 55.5228474983, 378.807118746, 60.0, 365.0, 60.0);
+context.lineTo(365.0, 60.0);
+context.bezierCurveTo(351.192881254, 60.0, 340.0, 55.5228474983, 340.0, 50.0);
+context.lineTo(340.0, 20.0);
+context.bezierCurveTo(340.0, 14.4771525017, 351.192881254, 10.0, 365.0, 10.0);
+context.lineTo(365.0, 10.0);
+context.bezierCurveTo(378.807118746, 10.0, 390.0, 14.4771525017, 390.0, 20.0);
+context.closePath();
+context.fillStyle = "rgba(0, 128, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(330.0, 10.0);
+context.lineTo(330.0, 60.0);
+context.lineTo(280.0, 60.0);
+context.lineTo(280.0, 10.0);
+context.closePath();
+context.fillStyle = "rgba(0, 128, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(365.0, 70.0);
+context.bezierCurveTo(378.807118746, 70.0, 390.0, 81.1928812542, 390.0, 95.0);
+context.bezierCurveTo(390.0, 108.807118746, 378.807118746, 120.0, 365.0, 120.0);
+context.bezierCurveTo(351.192881254, 120.0, 340.0, 108.807118746, 340.0, 95.0);
+context.bezierCurveTo(340.0, 81.1928812542, 351.192881254, 70.0, 365.0, 70.0);
+context.closePath();
+context.fillStyle = "rgba(0, 128, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(305.0, 70.0);
+context.bezierCurveTo(313.284271247, 70.0, 320.0, 81.1928812542, 320.0, 95.0);
+context.bezierCurveTo(320.0, 108.807118746, 313.284271247, 120.0, 305.0, 120.0);
+context.bezierCurveTo(296.715728753, 120.0, 290.0, 108.807118746, 290.0, 95.0);
+context.bezierCurveTo(290.0, 81.1928812542, 296.715728753, 70.0, 305.0, 70.0);
+context.closePath();
+context.fillStyle = "rgba(0, 128, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(330.0, 130.0);
+context.lineTo(330.0, 180.0);
+context.lineTo(280.0, 155.0);
+context.closePath();
+context.fillStyle = "rgba(0, 128, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(390.0, 130.0);
+context.lineTo(390.0, 180.0);
+context.lineTo(340.0, 155.0);
+context.fillStyle = "rgba(0, 128, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(390.0, 190.0);
+context.bezierCurveTo(390.0, 215.0, 390.0, 240.0, 365.0, 240.0);
+context.bezierCurveTo(365.0, 223.333333333, 356.666666667, 215.0, 340.0, 215.0);
+context.fillStyle = "rgba(0, 128, 0, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(10.0, 380.0);
+context.lineTo(10.0, 350.0);
+context.bezierCurveTo(10.0, 344.477152502, 21.1928812542, 340.0, 35.0, 340.0);
+context.lineTo(35.0, 340.0);
+context.bezierCurveTo(48.8071187458, 340.0, 60.0, 344.477152502, 60.0, 350.0);
+context.lineTo(60.0, 380.0);
+context.bezierCurveTo(60.0, 385.522847498, 48.8071187458, 390.0, 35.0, 390.0);
+context.lineTo(35.0, 390.0);
+context.bezierCurveTo(21.1928812542, 390.0, 10.0, 385.522847498, 10.0, 380.0);
+context.closePath();
+context.fillStyle = "rgba(0, 0, 255, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(70.0, 390.0);
+context.lineTo(70.0, 340.0);
+context.lineTo(120.0, 340.0);
+context.lineTo(120.0, 390.0);
+context.closePath();
+context.fillStyle = "rgba(0, 0, 255, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(35.0, 330.0);
+context.bezierCurveTo(21.1928812542, 330.0, 10.0, 318.807118746, 10.0, 305.0);
+context.bezierCurveTo(10.0, 291.192881254, 21.1928812542, 280.0, 35.0, 280.0);
+context.bezierCurveTo(48.8071187458, 280.0, 60.0, 291.192881254, 60.0, 305.0);
+context.bezierCurveTo(60.0, 318.807118746, 48.8071187458, 330.0, 35.0, 330.0);
+context.closePath();
+context.fillStyle = "rgba(0, 0, 255, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(95.0, 330.0);
+context.bezierCurveTo(86.7157287525, 330.0, 80.0, 318.807118746, 80.0, 305.0);
+context.bezierCurveTo(80.0, 291.192881254, 86.7157287525, 280.0, 95.0, 280.0);
+context.bezierCurveTo(103.284271247, 280.0, 110.0, 291.192881254, 110.0, 305.0);
+context.bezierCurveTo(110.0, 318.807118746, 103.284271247, 330.0, 95.0, 330.0);
+context.closePath();
+context.fillStyle = "rgba(0, 0, 255, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(70.0, 270.0);
+context.lineTo(70.0, 220.0);
+context.lineTo(120.0, 245.0);
+context.closePath();
+context.fillStyle = "rgba(0, 0, 255, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(10.0, 270.0);
+context.lineTo(10.0, 220.0);
+context.lineTo(60.0, 245.0);
+context.fillStyle = "rgba(0, 0, 255, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+context.beginPath();
+context.moveTo(10.0, 210.0);
+context.bezierCurveTo(10.0, 185.0, 10.0, 160.0, 35.0, 160.0);
+context.bezierCurveTo(35.0, 176.666666667, 43.3333333333, 185.0, 60.0, 185.0);
+context.fillStyle = "rgba(0, 0, 255, 0.5)";
+context.fill();
+context.lineWidth = 4.0;
+context.strokeStyle = "rgba(0, 0, 0, 0.5)";
+context.stroke();
+</script>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="500px" height="500px" viewBox="50 100 150 200">
+  <rect width="500" height="500" fill="black"/>
+  <rect x="50" y="100" width="150" height="200" fill=" yellow "/>
+  <rect x="60" y="110" width="130" height="180" fill=" rgb( 255 , 0 , 0 ) "/>
+  <path d="M.0.0-200+200+200+200zM100 250 100 150" fill="rgba(0, 255, 0, 0.5)" stroke="black" stroke-width="4"/>
+</svg>
+
+<canvas></canvas>
+<script>
+var canvases = document.getElementsByTagName("canvas");
+var canvas = canvases[canvases.length - 1];
+var context = canvas.getContext("2d");
+var width = 500.0;
+var height = 500.0;
+var dpr = window.devicePixelRatio || 1;
+canvas.width = dpr * width;
+canvas.height = dpr * height;
+canvas.style.width = width + "px";
+canvas.style.height = height + "px";
+context.scale(dpr, dpr);
+context.beginPath();
+context.moveTo(-62.5, -250.0);
+context.lineTo(1187.5, -250.0);
+context.lineTo(1187.5, 1000.0);
+context.lineTo(-62.5, 1000.0);
+context.closePath();
+context.fillStyle = "rgba(0, 0, 0, 1.0)";
+context.fill();
+context.beginPath();
+context.moveTo(62.5, 0.0);
+context.lineTo(437.5, 0.0);
+context.lineTo(437.5, 500.0);
+context.lineTo(62.5, 500.0);
+context.closePath();
+context.fillStyle = "rgba(255, 255, 0, 1.0)";
+context.fill();
+context.beginPath();
+context.moveTo(87.5, 25.0);
+context.lineTo(412.5, 25.0);
+context.lineTo(412.5, 475.0);
+context.lineTo(87.5, 475.0);
+context.closePath();
+context.fillStyle = "rgba(255, 0, 0, 1.0)";
+context.fill();
+context.beginPath();
+context.moveTo(-62.5, -250.0);
+context.lineTo(-562.5, 250.0);
+context.lineTo(437.5, 250.0);
+context.closePath();
+context.moveTo(187.5, 375.0);
+context.lineTo(187.5, 125.0);
+context.fillStyle = "rgba(0, 255, 0, 0.5)";
+context.fill();
+context.lineWidth = 10.0;
+context.strokeStyle = "rgba(0, 0, 0, 1.0)";
+context.stroke();
+</script>
