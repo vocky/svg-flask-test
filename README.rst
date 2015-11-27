@@ -5,9 +5,9 @@ Use flask to display svg image and change the background color of roads when rel
 Quick Start
 -----------
 
-.. code-block::console
+.. code-block:: console
 
-    $python app.py
+    $ python app.py
 
 Result
 -----
